@@ -2,7 +2,7 @@
   "name": "telegram-bot",
   "version": "1.0.0",
   "description": "For practic",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/opjs105rogue/Telegram-Bot/issues"
   },
-  "homepage": "https://github.com/opjs105rogue/Telegram-Bot#readme"
+  "homepage": "https://github.com/opjs105rogue/Telegram-Bot#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "telegraf": "^4.16.3",
+    "telegraf-i18n": "^6.6.0"
+  }
 }
