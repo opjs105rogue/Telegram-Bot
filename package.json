@@ -19,6 +19,7 @@
   "homepage": "https://github.com/opjs105rogue/Telegram-Bot#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "i18next": "^23.16.5",
     "telegraf": "^4.16.3"
   }
 }
