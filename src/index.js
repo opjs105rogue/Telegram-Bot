@@ -30,7 +30,19 @@ getExchange().then(data => {
   // getExchange мы преобрвзовали объекты в массив объектов
 });
 
-bot.start((ctx)=>ctx.reply('Welcome!'))
+bot.start((ctx) => {
+  const keyboard = [
+    [{ text: 'Доллар', callback_data: 'USD' }],
+    [{ text: 'Евро', callback_data: 'EUR' }],
+    [{ text: 'Китайский юань', callback_data: 'CNY' }]
+];
+    // Отправляем сообщение с клавиатурой
+    ctx.reply('Выберите валюту:', {
+      reply_markup: {
+          inline_keyboard: keyboard  // передаем массив кнопок
+      }
+  });
+})
 bot.help((ctx)=>ctx.reply('Send me a sticker'));
 bot.on(message('sticker'), (ctx)=>ctx.reply('👍'))
 bot.hears((message), (ctx)=> ctx.reply('Hello,body!'));

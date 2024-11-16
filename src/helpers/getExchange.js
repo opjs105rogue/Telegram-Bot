@@ -14,7 +14,7 @@ module.exports = async () => {
         const requiredCurrencies = ['USD', 'EUR', 'CNY']; // коды валют, которые вам нужны
         // Фильтруем валюты, чтобы оставить только те, которые в requiredCurrencies
         const filteredCurrencies = currencies.filter(currency => requiredCurrencies.includes(currency.CharCode));
-
+        console.log(filteredCurrencies) 
         return filteredCurrencies; // Возвращаем отфильтрованные валюты
     }
 }
